@@ -28,6 +28,7 @@ const ResetPassword = () => {
   const [formData, setFormData] = useState({
    
     password: "",
+    token
     
   });
 
@@ -36,7 +37,7 @@ const ResetPassword = () => {
   };
 
   const handleSubmit = async (e) => {
-    setFormData({...formData, token})
+    // setFormData({...formData, token})
     console.log(formData)
     e.preventDefault();
 
